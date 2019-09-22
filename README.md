@@ -1,17 +1,12 @@
-money-ui
+# MoneyUi
 Projeto front-end para aprendizagem do framework Angular.
 
-Aplicação Angular criada com a ferramenta de linha de comando Angular CLI.
-Comando: ng new money-ui
-Adicionado o Angular routing e com o formato de stylesheet Sass.
+Esse projeto foi gerado com [Angular CLI](https://github.com/angular/angular-cli) versão 8.3.2.
+Configurado com o Angular routing e o formatador de estilo Sass.
 
-# MoneyUi
+## Servidor de desenvolvimento
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.2.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Execute `ng serve` para iniciar o servidor de desenvolvimento. Navegue para `http://localhost:4200/`. A aplicação irá recarregar automaticamente se você alterar alguma coisa nos arquivos.
 
 ## Code scaffolding
 
