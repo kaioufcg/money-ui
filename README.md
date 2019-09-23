@@ -47,9 +47,21 @@ Branch prefixe name for support branches is [support/].
 #### Criar uma nova funcionalidade utilize o comando abaixo.
 git flow feature start name_feature
 
-Terminado a implementação e os 'commits', utilize o comando abaixo.
+#### Gitflow e Pull Requests
+Antes de fechar a feature, consulte seus colegas, depois de fazer pull request 
+para a branch [develop], e os adicione como reviewers.
+Se estiver tudo correto, faça o merge na branch [develop].
+Remova a branch da feature.
+Depois é só fazer checkout e pull da branch [develop] 
+e fazer git branch -D nome_feature para remover a branch local.
+
+Outra opção é, termine a implementação e os 'commits'.
+Faça push para o repositório remoto, consulte seus colegas, depois de fazer pull request 
+para a branch [develop], e os adicione como reviewers. Faça o merge na branch [develop]
+e depois utilize o comando abaixo
 git flow feature finish name_feature
-Executado o comando você estará na 'branch' [develop].
+Executado o comando você estará na 'branch' [develop]. 
+Só que vai existir um commit do pull request. 
 
 #### Criar uma nova release utilize o comando abaixo.
 git flow release star name_release
@@ -78,8 +90,6 @@ Adicione o nome para a tag e salve com :wq
 Salvo, a tela de merge com a brach [develop] será apresentada.
 Adicione uma mensagem e salve com :wq
 Executado os comandos, você vai estar na branch [develop].
-
-#### Gitflow e Pull Requests
 
 
 
