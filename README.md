@@ -27,3 +27,61 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Extensões
+
+#### Git Flow
+
+Fluxo do git no projeto.
+
+O projeto segue utilizando os nomes padrões das branchs.
+Branch name for production releases is [master].
+Branch name for "next release" development is [develop].
+
+Para suporte das branchs, segue-se os prefixos de nomes padrões.
+Branch prefixe name for feature branches is [feature/].
+Branch prefixe name for bugfix branches is [bugfix/].
+Branch prefixe name for release branches is [release/].
+Branch prefixe name for hotfix branches is [hotfix/].
+Branch prefixe name for support branches is [support/].
+
+#### Criar uma nova funcionalidade utilize o comando abaixo.
+git flow feature start name_feature
+
+Terminado a implementação e os 'commits', utilize o comando abaixo.
+git flow feature finish name_feature
+Executado o comando você estará na 'branch' [develop].
+
+#### Criar uma nova release utilize o comando abaixo.
+git flow release star name_release
+Executado o comando você estará na nova branch 
+baseada na branch [develop].
+
+Terminado os ajustes e os 'commits', utilize o comando abaixo.
+git flow release finish name_release
+Executado o comando você estará na tela de merge.
+Adicione uma mensagem e salve com :wq
+Após isso, você vai cair em outra tela, a tela da mensagem da 'tag' (Nova versão da aplicação).
+Adicione uma mensagem e salve com :wq
+Executado os comandos, você vai estar na branch [master].
+
+#### Criar uma 'branch' para correção de erro urgente em produção.
+git flow hotfix start name_hotfix
+Executado o comando você estará na nova branch 
+baseada na branch [master].
+
+Terminado a correção, utilize o comando abaixo.
+git flow hotfix finish name_hotfix
+Executado o comando a tela de merge com a brach [master] será apresentada.
+Adicione uma mensagem e salve com :wq
+Salvo, a tela da 'tag'(Nova versão da aplicação) será apresentada.
+Adicione o nome para a tag e salve com :wq
+Salvo, a tela de merge com a brach [develop] será apresentada.
+Adicione uma mensagem e salve com :wq
+Executado os comandos, você vai estar na branch [develop].
+
+#### Gitflow e Pull Requests
+
+
+
+
+
